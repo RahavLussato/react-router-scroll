@@ -6,21 +6,17 @@
 
 ## fork: react-router-scroll-internal-history [![npm](https://img.shields.io/npm/v/react-router-scroll-internal-history.svg)](https://www.npmjs.com/package/react-router-scroll-internal-history) [![Travis branch](https://img.shields.io/travis/tommilligan/react-router-scroll/react-router-scroll-internal-history.svg)](https://travis-ci.org/tommilligan/react-router-scroll/react-router-scroll-internal-history)
 
-I was looking to use [react-router-scroll](https://github.com/taion/react-router-scroll), for a work project, but could not because it already uses [history](https://github.com/ReactTraining/history) `@^4.5.1`. This means react-router-scroll:
+I was looking to use [react-router-scroll](https://github.com/taion/react-router-scroll), for an existing  work project, but could not because it already uses [history](https://github.com/ReactTraining/history) `@^4.5.1`. This means react-router-scroll:
 
-* generates an `unmet peer dependency` warning
-* will not install a compatible version of history for itself
+* generates an `unmet peer dependency` warning during `npm install`
+* will not install a compatible version of `history` for itself
 * fails at runtime as `history@^4.0.0` is incompatible
 
 As the `history` module is only used to retrieve information `react-router-scroll` has explicitly stored, it does not need to be the same version of `history` that the rest of the app uses. Therefore, it should be able to be specified as a standard dependency!
 
 `react-router-scroll-internal-history` uses `history@^2.1.2` internally, leaving your app free to use whatever `history` version it likes*
 
-> *only tested in anger with the following  `package.json` dependencies:
->     history@^4.5.1
->     react-router@^3.0.1
->     react-dom@^15.4.2
->     react@^15.4.2
+> *only tested in anger with the following  `package.json` dependencies: history@^4.5.1, react-router@^3.0.1, react-dom@^15.4.2, react@^15.4.2
 
 ---
 
