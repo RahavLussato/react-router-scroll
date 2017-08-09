@@ -1,7 +1,7 @@
 {
-  "name": "react-router-scroll",
-  "version": "0.4.2",
-  "description": "React Router scroll management",
+  "name": "react-router-scroll-internal-history",
+  "version": "0.0.1",
+  "description": "React Router scroll management, without a history peerDependency",
   "files": [
     "lib"
   ],
@@ -16,19 +16,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taion/react-router-scroll.git"
+    "url": "git+https://github.com/tommilligan/react-router-scroll.git"
   },
   "keywords": [
     "react",
     "react router",
-    "scroll"
+    "scroll",
+    "history"
   ],
-  "author": "Jimmy Jia",
+  "author": "Tom Milligan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taion/react-router-scroll/issues"
+    "url": "https://github.com/tommilligan/react-router-scroll/issues"
   },
-  "homepage": "https://github.com/taion/react-router-scroll#readme",
+  "homepage": "https://github.com/tommilligan/react-router-scroll#readme",
   "dependencies": {
     "history": "^2.1.2",
     "prop-types": "^15.5.6",
